@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+    <a href="/user/signup/signup.html">User Signup</a>
+    <br>
+    <a href="/user/signin/signin.html">User Signin</a>
+    <br>
+    <a href="/librarian/signin/signin.html">Librerian Signin</a>
+    <br>
+
+
+    <script>
+        const lib = new Librarian("ahmed","123456");
+        //const a = new Customer("ahmed","123456");
+
+        console.log(lib)
+        //const book1 = new Book();
+
+        const auth = new Author('ayman');
+        const auth2 = new Author('mohamed');
+
+        const allAuth =[];
+        allAuth.push(auth)
+        allAuth.push(auth2)
+        const obj = {
+            username:"ahmed",
+            password:"123456",
+        }
+        //localStorage.setItem("librarian" ,JSON.stringify(obj) )
+
+        localStorage.setItem("librarian" , JSON.stringify(lib))
+
+        localStorage.setItem("Authers" , JSON.stringify(allAuth))
+        //localStorage.setItem("borrowed" , JSON.stringify([]))
+
+    </script>
+    
+</body>
+
+</html>

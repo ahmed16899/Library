@@ -1,0 +1,11 @@
+input
+{
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    font-size: 1.2rem;
+}
+.head
+{
+    background-color: gainsboro;
+}
